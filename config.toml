@@ -1,3 +1,51 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = ""
+languageCode = "en-us"
+title = "Ascent Data Solutions"
+theme = "yourfolio"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+#googleAnalytics = UA-123-45
+
+
+# Menu items
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/Home"
+    weight     = 1
+
+[[menu.main]]
+        name       = "Contact"
+        identifier = "menu.contact"
+        url        = "/Contact"
+        weight     = 2
+
+
+[[menu.main]]
+        name       = "Blog"
+        identifier = "menu.blog"
+        url        = "/Blog"
+        weight     = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  #name = "Active Transport Futures"
+  #description = "global scale open source software for planning urban futures for active transport"
+
+  # Link custom assets relative to /static
+  custom_css = []
+ custom_js  = []
+ favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+#  image = ""
